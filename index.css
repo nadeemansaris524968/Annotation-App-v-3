@@ -1,0 +1,34 @@
+body {
+    background-color: burlywood;
+}
+
+.dt-index {
+    column-width: auto !important;
+}
+
+td {word-wrap: break-word}
+th {word-wrap: break-word}
+
+.container {
+    padding-bottom: 20px;
+}
+
+.form-center {
+    padding: 20px;
+}
+
+.input-div {
+    display: inline-table;
+    margin: 10px 2px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.easy-autocomplete-container { 
+    max-height: 300px;
+    overflow: auto; 
+    overflow-y: auto; 
+    overflow-x:hidden; 
+}
