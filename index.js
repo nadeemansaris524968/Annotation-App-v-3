@@ -8284,7 +8284,28 @@ var UICtrl = (function () {
             "scrollY": "400px",
             "scrollX": true,
             "columnDefs": [
-                { "width": "10%", "targets": "_all" }
+                { "width": "10px", "targets": "_all" },
+                {
+                    "render" : function (data, type, row) {
+                        return data + ' (' + row[5] + ')';
+                    },
+                    "targets": 4
+                },
+                { "visible": false,  "targets": [ 5 ] },
+                {
+                    "render" : function (data, type, row) {
+                        return data + ' (' + row[7] + ')';
+                    },
+                    "targets": 6
+                },
+                { "visible": false,  "targets": [ 7 ] },
+                {
+                    "render" : function (data, type, row) {
+                        return data + ' (' + row[11] + ')';
+                    },
+                    "targets": 10
+                },
+                { "visible": false,  "targets": [ 11 ] }
             ]
         });
 
